@@ -1,7 +1,7 @@
-﻿WAF.define('AutoFormNavigation', ['waf-core/widget', 'Button', 'Text'], function(widget, Button, Text) {
+﻿WAF.define('FormNavigation', ['waf-core/widget', 'Button', 'Text'], function(widget, Button, Text) {
     "use strict";
 
-    var AutoFormNavigation = widget.create('AutoFormNavigation', {
+    var FormNavigation = widget.create('FormNavigation', {
         datasource: widget.property({ type: 'datasource' }),
         init: function() {
             var actions = {
@@ -37,17 +37,17 @@
             updateCount.call(this);
         }
     });
-    AutoFormNavigation.inherit('waf-behavior/layout/composed');
-    AutoFormNavigation.setPart('first',    Button, { title: '⇤' });
-    AutoFormNavigation.setPart('previous', Button, { title: '←' });
-    AutoFormNavigation.setPart('position', Text,   { value: '' });
-    AutoFormNavigation.setPart('next',     Button, { title: '→' });
-    AutoFormNavigation.setPart('last',     Button, { title: '⇥' });
-    AutoFormNavigation.setPart('new',      Button, { title: '+' });
-    AutoFormNavigation.setPart('search',   Button, { title: 'Search' });
-    AutoFormNavigation.setPart('save',     Button, { title: 'Save' });
-    AutoFormNavigation.setPart('delete',   Button, { title: 'X' });
+    FormNavigation.inherit('waf-behavior/layout/composed');
+    FormNavigation.setPart('first',    Button, { title: '⇤' });
+    FormNavigation.setPart('previous', Button, { title: '←' });
+    FormNavigation.setPart('position', Text,   { value: '' });
+    FormNavigation.setPart('next',     Button, { title: '→' });
+    FormNavigation.setPart('last',     Button, { title: '⇥' });
+    FormNavigation.setPart('new',      Button, { title: '+' });
+    FormNavigation.setPart('search',   Button, { title: 'Search' });
+    FormNavigation.setPart('save',     Button, { title: 'Save' });
+    FormNavigation.setPart('delete',   Button, { title: 'X' });
 
-    return AutoFormNavigation;
+    return FormNavigation;
 
 });

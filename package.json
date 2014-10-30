@@ -1,12 +1,12 @@
 ﻿{
-    "name": "AutoFormNavigation",
+    "name": "FormNavigation",
     "category": "Hidden",
     "author": "Stéphane PUYBAREAU (4D)",
     "version": "1.0.0",
     "copyright": "(c) 2014 4D",
     "repository": {
         "type": "git",
-        "url": "https://github.com/Puyb4D/AutoFormNavigation.git"
+        "url": "https://github.com/Puyb4D/FormNavigation.git"
     },
     "keywords": ["wakanda", "widget"],
     "engines": {"wakanda": ">= 9"},
@@ -15,6 +15,6 @@
         {"id": "Widget_V2"},
         {"id": "Button/package.json", "version": "1.0.0", "path": "WIDGETS_CUSTOM"},
         {"id": "Text/package.json", "version": "1.0.0", "path": "WIDGETS_CUSTOM"},
-        {"id": "AutoFormNavigation/widget.js", "version": "1.0.0", "path": "WIDGETS_CUSTOM"}
+        {"id": "FormNavigation/widget.js", "version": "1.0.0", "path": "WIDGETS_CUSTOM"}
     ]
 }
